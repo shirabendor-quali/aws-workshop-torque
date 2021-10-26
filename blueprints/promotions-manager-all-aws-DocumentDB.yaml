@@ -46,7 +46,7 @@ applications:
         - API_BUILD_NUMBER: $API_BUILD_NUMBER
 
 services:
-  - promotions-manager-docdb:
+  - 1promotions-manager-docdb:
         input_values:
         - USERNAME: $DB_USERNAME
         - PASSWORD: $DB_PASSWORD
