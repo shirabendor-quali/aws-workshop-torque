@@ -37,7 +37,7 @@ applications:
   - promotions-manager-api:      
       #target: vm1
       depends_on:
-        - 1promotions-manager-docdb
+        - promotions-manager-docdb
       input_values:
         - API_PORT: $API_PORT
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
@@ -46,7 +46,7 @@ applications:
         - API_BUILD_NUMBER: $API_BUILD_NUMBER
 
 services:
-  - 1promotions-manager-docdb:
+  - promotions-manager-docdb:
         input_values:
         - USERNAME: $DB_USERNAME
         - PASSWORD: $DB_PASSWORD
