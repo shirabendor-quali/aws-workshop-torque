@@ -53,4 +53,4 @@ services:
         - SANDBOX_ID: ${SandboxID}              
 
 debugging:
-  availability: on
+  bastion_availability: enabled-on
